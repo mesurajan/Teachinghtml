@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Student Innovation Summit 2026</title>
+  </head>
+  <body>
+    <header>
+      <h1>Event Registration</h1>
+      <p>Reserve your place at Student Innovation Summit 2026.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Before You Register</h2>
+        <img
+          src="images/registration-desk.png"
+          alt="Student volunteers welcoming attendees at the registration desk"
+          width="700"
+        >
+        <p>
+          Registration is free for students and teachers. Complete the form
+          carefully because important event updates will be sent by email.
+        </p>
+        <ul>
+          <li>General visitors may attend talks and the exhibition.</li>
+          <li>Workshop participants must select their preferred workshop.</li>
+          <li>Project exhibitors must provide a short project description.</li>
+          <li>Competition participants may register individually or as a team.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              <label for="full-name">Full Name:</label><br>
+              <input type="text" id="full-name" name="full-name" required>
+            </p>
+            <p>
+              <label for="email">Email Address:</label><br>
+              <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+              <label for="phone">Phone Number:</label><br>
+              <input type="tel" id="phone" name="phone" required>
+            </p>
+            <p>
+              <label for="age">Age:</label><br>
+              <input type="number" id="age" name="age" min="14" max="40">
+            </p>
+            <p>
+              <label for="address">Address:</label><br>
+              <input type="text" id="address" name="address">
+            </p>
+            <p><strong>Gender:</strong></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <input type="radio" id="prefer-not" name="gender" value="prefer-not-to-say">
+            <label for="prefer-not">Prefer not to say</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Academic Information</legend>
+            <p>
+              <label for="college">School or College Name:</label><br>
+              <input type="text" id="college" name="college" required>
+            </p>
+            <p>
+              <label for="course">Course or Program:</label><br>
+              <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="school">School Level</option>
+                <option value="bca">BCA</option>
+                <option value="bsc-csit">BSc CSIT</option>
+                <option value="bim">BIM</option>
+                <option value="bit">BIT</option>
+                <option value="engineering">Engineering</option>
+                <option value="management">Management</option>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <p>
+              <label for="study-year">Current Year or Semester:</label><br>
+              <input type="text" id="study-year" name="study-year">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Participation Details</legend>
+            <p>
+              <label for="participant-type">How would you like to participate?</label><br>
+              <select id="participant-type" name="participant-type" required>
+                <option value="">Select participation type</option>
+                <option value="visitor">General Visitor</option>
+                <option value="workshop">Workshop Participant</option>
+                <option value="exhibitor">Project Exhibitor</option>
+                <option value="competition">Competition Participant</option>
+                <option value="volunteer">Student Volunteer</option>
+              </select>
+            </p>
+            <p><strong>Select your interests:</strong></p>
+            <input type="checkbox" id="web-development" name="interests" value="web-development">
+            <label for="web-development">Web Development</label><br>
+            <input type="checkbox" id="robotics" name="interests" value="robotics">
+            <label for="robotics">Robotics</label><br>
+            <input type="checkbox" id="design" name="interests" value="digital-design">
+            <label for="design">Digital Design</label><br>
+            <input type="checkbox" id="entrepreneurship" name="interests" value="entrepreneurship">
+            <label for="entrepreneurship">Entrepreneurship</label><br>
+            <input type="checkbox" id="public-speaking" name="interests" value="public-speaking">
+            <label for="public-speaking">Public Speaking</label>
+            <p>
+              <label for="project-title">Project or Team Name:</label><br>
+              <input type="text" id="project-title" name="project-title">
+            </p>
+            <p>
+              <label for="message">Project Description, Questions, or Special Requirements:</label><br>
+              <textarea id="message" name="message" rows="7" cols="50"></textarea>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmation</legend>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">
+              I confirm that the information provided is correct and I agree to
+              follow the event rules.
+            </label>
+          </fieldset>
+
+          <p>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Clear Form</button>
+          </p>
+        </form>
+      </section>
+
+      <section>
+        <h2>What Happens Next?</h2>
+        <ol>
+          <li>The organizing team reviews your registration.</li>
+          <li>You receive a confirmation email.</li>
+          <li>Selected participants receive reporting instructions.</li>
+          <li>You bring your confirmation and student ID to the event.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>Need registration help? <a href="contact.html">Contact the event team</a>.</p>
+      <p>&copy; 2026 Student Innovation Summit. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <hr>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <h1>Registration Form</h1>
+    <div class="maindiv">
+        <div>
+            <img src="/studenteventwebsite/assets/calender.png" alt="photo of calender" style="height: 40px; width: 40px;">
+            <h3>Event Information</h3>
+            <hr>
+        </div>
+        <form action="#">
+            <div>
+                <label for="name">Event Title :</label>
+                <input type="text" placeholder="Enter event title">
+            </div>
+            <div>
+                <p>Event Type :</p>
+                <select name="" id="">
+                    <option value="techfest">Tech Fest</option>
+                    <option value="culturalprogram">Cultural Program</option>
+                    <option value="sportsweek">Sports Week</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="date">Date :</label>
+                <input type="date" placeholder="Enter date">
+            </div>
+            <br>
+            <div>
+                <label for="time">Time :</label>
+                <input type="time">
+            </div>
+            <br>
+            <div>
+                <label for="venue">Venue :</label>
+                <input type="text" placeholder="Enter venue name/location">
+            </div>
+            <br>
+            <div>
+                <label for="capicity">Capicity :</label>
+                <input type="number">
+            </div>
+            <br><br>
+            <div>
+                <div>
+                    <img src="./assets/Exclamationmark.png" alt="image of exclamentory mark" style="width: 40px; height: 40px;">
+                    <h3>Event Description</h3>
+                    <hr>
+                </div>
+                <div>
+                    <label for="description">Description :</label>
+                    <input type="text" placeholder="Write event description, agenda, details, etc...">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>Event Image</h3>
+                <hr>
+                <div>
+                    <label for="uploadimage">Upload image</label>
+                    <input type="file">
+                </div>
+            </div>
+            <br>
+            <button>Submit Now</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03 - Building Multi-Page Websites</title>
+  </head>
+  <body>
+    <header>
+      <h1>Day 03: Building Multi-Page Websites</h1>
+      <p>Learning how separate HTML pages work together as one website.</p>
+
+      <nav>
+        <ul>
+          <li><a href="#multi-page">Multi-Page Websites</a></li>
+          <li><a href="#folder-structure">Folder Structure</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#class-task">Class Task</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="multi-page">
+        <h2>What Is a Multi-Page Website?</h2>
+        <p>
+          A multi-page website is a collection of related HTML files. Each page
+          is stored as a separate file and opens when a visitor clicks a link.
+        </p>
+        <p>A simple restaurant website can contain these pages:</p>
+        <ul>
+          <li><strong>index.html:</strong> The homepage</li>
+          <li><strong>about.html:</strong> Information about the restaurant</li>
+          <li><strong>menu.html:</strong> Food items and descriptions</li>
+          <li><strong>contact.html:</strong> Address and contact information</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="folder-structure">
+        <h2>Organizing Website Files</h2>
+        <p>
+          Keeping files organized makes links and image paths easier to
+          understand.
+        </p>
+        <pre>
+Restaurant-Website/
+|-- index.html
+|-- about.html
+|-- menu.html
+|-- contact.html
+`-- images/
+    |-- burger.jpg
+    `-- interior.jpg
+        </pre>
+        <p>
+          Shared images should be placed inside the images folder and should
+          have clear filenames.
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="navigation">
+        <h2>Website Navigation</h2>
+        <p>
+          Navigation helps visitors move between website pages. A multi-page
+          website should use the same navigation links on every page.
+        </p>
+
+        <h3>Example Navigation</h3>
+        <pre>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="menu.html"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+      </section>
+
+      <section>
+        <h2>Relative Paths</h2>
+        <p>
+          Relative paths connect files based on their location inside the
+          project folder.
+        </p>
+        <ul>
+          <li><code>about.html</code> links to a file in the same folder.</li>
+          <li><code>images/burger.jpg</code> loads an image from the images folder.</li>
+          <li>File names and letter case must match correctly.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="images">
+        <h2>Using Images Correctly</h2>
+        <p>
+          Images can make a website more informative. Every image should have a
+          correct path and useful alternative text.
+        </p>
+        <pre>
+&lt;figure&gt;
+  &lt;img src="images/burger.jpg" alt="Cheesy burger with lettuce" width="300"&gt;
+  &lt;figcaption&gt;Our special cheesy burger&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </pre>
+        <p>
+          The <code>alt</code> attribute describes the image when it cannot be
+          displayed and helps visitors using screen readers.
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="class-task">
+        <h2>Class Task: Improve the Restaurant Website</h2>
+        <ol>
+          <li>Use the same navigation links on every page.</li>
+          <li>Test every link from every page.</li>
+          <li>Add menu images with correct paths and alt text.</li>
+          <li>Add the restaurant story and mission to the About page.</li>
+          <li>Add location, phone number, and email to the Contact page.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Homework: Student Event Website</h2>
+        <p>Create a multi-page website for a college event.</p>
+        <ul>
+          <li>Home page</li>
+          <li>About Event page</li>
+          <li>Schedule page with at least five events</li>
+          <li>Contact page</li>
+        </ul>
+        <p>
+          Every page should use identical navigation and clean HTML structure.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Day 03 HTML Practice - Multi-Page Websites and Navigation</p>
+    </footer>
+  </body>
+</html>
