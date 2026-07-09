@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hamburger Menu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+      }
+
+      .navbar {
+        background: #222;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background: #222;
+          flex-direction: column;
+          text-align: center;
+          padding: 20px 0;
+        }
+
+        .nav-links li {
+          margin: 12px 0;
+        }
+
+        #menu-toggle:checked ~ .nav-links {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger"> ☰ </label>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
